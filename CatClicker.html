@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cat Clicker</title>
+    <style type="text/css">
+    .thumbnail{
+    	float: left;
+    	margin:20px;
+    }
+    ul	{
+    	list-style: none;
+    	float: right;
+    	padding-right: 200px; 
+    }
+    img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+    }
+
+    img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+    </style>
+</head>
+
+<body>
+    <ul id="cat-list"></ul>
+    <div id="cat">
+        <h2 id="cat-name"></h2>
+        <div id="cat-count"></div>
+        <img id="cat-img" src="" alt="cute cat">
+    </div>
+    <button id="admin-button">Admin</button>
+    <div id="admin">
+        <form id="admin-form">
+            <p><span>Name:</span><input type="text" name="name" id="admin-name"></p>
+            <p><span>ImgURL:</span><input type="text" name="imgSrc" id="admin-imgSrc"></p>
+            <p><span>Clicks:</span><input type="number" min="0" step="1" name="clickCount" id="admin-clickCount"></p>
+            <p><input type="reset" value="Cancel" id="admin-cancel">
+            <input type="submit" value="Save" id="admin-save"></p>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/Cat.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
